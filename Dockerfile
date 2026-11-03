@@ -1,4 +1,4 @@
-FROM caddy/caddy:2.10.2 AS caddy
+FROM caddy:2.11.7 AS caddy
 
 FROM searxng/searxng:latest
 
