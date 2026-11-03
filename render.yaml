@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: searxng
+    runtime: docker
+    plan: free
+    healthCheckPath: /healthz
+    envVars:
+      - key: SEARXNG_BASE_URL
+        sync: false
+      - key: SEARXNG_SECRET
+        generateValue: true
+      - key: AUTH_PASSWORD
+        sync: false

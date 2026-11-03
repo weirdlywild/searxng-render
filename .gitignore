@@ -1,0 +1,6 @@
+caddy
+caddy.tar.gz
+PASSWORD.txt
+*.tmp
+envbody.json
+.secret.*

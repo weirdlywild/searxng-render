@@ -1,0 +1,16 @@
+use_default_settings: true
+
+# Overrides over the upstream defaults.
+# secret_key is replaced at container start from $SEARXNG_SECRET.
+server:
+  secret_key: "ultrasecretkey"
+  image_proxy: true
+  limiter: false
+
+search:
+  autocomplete: "google"
+  formats:
+    - html
+    - json
+    - csv
+    - rss
